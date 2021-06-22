@@ -8,7 +8,6 @@ module.exports = {
 		'gatsby-plugin-styled-components',
 		'gatsby-plugin-image',
 		'gatsby-plugin-react-helmet',
-		'gatsby-plugin-sitemap',
 		'gatsby-optional-chaining',
 		{
 			resolve: `gatsby-plugin-google-fonts`,
@@ -50,14 +49,6 @@ module.exports = {
 				path: `${__dirname}/src/images`,
 			},
 			__key: 'images',
-		},
-		{
-			resolve: 'gatsby-source-filesystem',
-			options: {
-				name: 'pages',
-				path: './src/pages/',
-			},
-			__key: 'pages',
 		},
 	],
 };
