@@ -8,7 +8,17 @@ export const ArticleCardWrapper = styled.div`
 	background: linear-gradient(85deg, #40084d, #2e0038);
 	box-shadow: 0 0 10px 5px #ff00f7, 0 0 10px 10px #5773ff;
 	> div {
-		flex-grow: 1;
+		flex: 1;
+	}
+	> div:first-child {
+		overflow: hidden;
+		> div:first-child {
+			max-width: 100%;
+			transition: 0.5s all ease-in-out;
+			&:hover {
+				transform: scale(1.2);
+			}
+		}
 	}
 	> div:last-child {
 		display: flex;
@@ -45,6 +55,12 @@ export const Preview = styled.div`
 	flex: 1;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+	> a {
+		text-align: center;
+		> p {
+			margin-top: 20px;
+		}
+	}
 `;
 export const CreatedAt = styled.div`
 	font-family: 'Patua One', cursive;

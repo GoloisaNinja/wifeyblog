@@ -12,6 +12,7 @@ export function ArticleGrid() {
 				{articles.map((article) => (
 					<ArticleCard
 						key={article.id}
+						id={article.id}
 						title={article.title}
 						author={article.author.username}
 						hookText={article.hookText}
