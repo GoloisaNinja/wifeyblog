@@ -57,8 +57,14 @@ export const Preview = styled.div`
 	-webkit-text-fill-color: transparent;
 	> a {
 		text-align: center;
+		text-decoration: none;
+
 		> p {
 			margin-top: 20px;
+			background-image: linear-gradient(45deg, #ff00f7, #1bc4f2);
+			background-clip: text;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
 		}
 	}
 `;
