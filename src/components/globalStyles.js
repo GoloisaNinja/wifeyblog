@@ -6,6 +6,9 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
+  html {
+    background: #333333;
+  }
   select{
     height: 40px;
     font-size: 16px;
