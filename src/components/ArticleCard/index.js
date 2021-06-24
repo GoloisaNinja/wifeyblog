@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
+import { GradientText } from '../GradientText';
 import {
 	ArticleCardWrapper,
 	Title,
@@ -17,17 +18,30 @@ export function ArticleCard({ title, hookText, author, image, createdAt, id }) {
 					<GatsbyImage image={image} alt='article image' />
 				</div>
 			</div>
-			<div>
+			<GradientText font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
 				<Title>{title}</Title>
+			</GradientText>
+			<GradientText font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
 				<Author>by {author}</Author>
-				<Preview>
+			</GradientText>
+			<Preview>
+				<GradientText font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
 					{hookText}
-					<Link to={`/articles/${id}`}>
+				</GradientText>
+
+				<Link to={`/articles/${id}`}>
+					<GradientText
+						font={"'Patua One', cursive"}
+						color={'#ff0a78, #5773ff'}>
 						<p>CONTINUE READING</p>
-					</Link>
-				</Preview>
-				<CreatedAt>published {createdAt.slice(0, 10)}</CreatedAt>
-			</div>
+					</GradientText>
+				</Link>
+			</Preview>
+			<GradientText font={"'Patua One', cursive"} color={'#ff0a78, #5773ff'}>
+				<CreatedAt>
+					<p>published {createdAt.slice(0, 10)}</p>
+				</CreatedAt>
+			</GradientText>
 		</ArticleCardWrapper>
 	);
 }
