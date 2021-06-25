@@ -20,6 +20,7 @@ export const HeroTextWrapper = styled.section`
 	}
 	h1 {
 		margin-top: 0;
+		font-size: 4em;
 	}
 	@media (min-width: 940px) {
 		margin-right: 25px;

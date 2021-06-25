@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArticleContextProvider } from './src/context/ArticleContext';
-import { GlobalStyles } from './src/components/globalStyles';
+import { GlobalStyle } from './src/components/globalStyles';
 
 export const wrapRootElement = ({ element }) => (
 	<ArticleContextProvider>{element}</ArticleContextProvider>
@@ -8,7 +8,7 @@ export const wrapRootElement = ({ element }) => (
 
 export const wrapPageElement = ({ element }) => {
 	<>
-		<GlobalStyles />
+		<GlobalStyle />
 		{element}
 	</>;
 };

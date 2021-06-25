@@ -24,7 +24,13 @@ module.exports = {
 		{
 			resolve: 'gatsby-plugin-manifest',
 			options: {
-				icon: 'src/images/icon.png',
+				name: `Wifey Blog`,
+				short_name: `starter_blog`,
+				start_url: `/`,
+				background_color: `#333333`,
+				theme_color: `#333333`,
+				display: `minimal-ui`,
+				icon: 'src/images/icon.png', // This path is realtive to the root of the site.
 			},
 		},
 		{
