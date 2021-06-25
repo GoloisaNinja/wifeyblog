@@ -13,5 +13,5 @@ export const HeaderWrapper = styled.header`
 	}
 `;
 export const LogoWrapper = styled.div`
-	max-width: 200px;
+	max-width: 180px;
 `;

@@ -8,10 +8,10 @@ export function Logo() {
 			file(relativePath: { eq: "wifey.png" }) {
 				childImageSharp {
 					gatsbyImageData(
-						placeholder: BLURRED
-						width: 200
-						quality: 100
-						formats: [AUTO, WEBP]
+						placeholder: DOMINANT_COLOR
+						width: 180
+						quality: 30
+						formats: [WEBP]
 					)
 				}
 			}
