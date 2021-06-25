@@ -25,6 +25,7 @@ export const ArticleCardWrapper = styled.div`
 `;
 export const Title = styled.div`
 	font-size: 1.65em;
+	font-weight: 900;
 	text-align: center;
 	margin-top: 15px;
 	padding: 10px;
@@ -44,6 +45,8 @@ export const Preview = styled.div`
 
 		> p:last-child {
 			margin-top: 20px;
+			padding: 15px;
+			border: 1px solid #ff00f7;
 		}
 	}
 `;

@@ -5,6 +5,7 @@ export const ArticleHeader = styled.header`
 `;
 export const ArticleByLine = styled.div`
 	display: flex;
+	padding-left: 20px;
 	h5 {
 		margin: 0;
 	}
@@ -18,5 +19,5 @@ export const ArticleHookTextWrapper = styled.section`
 `;
 export const ArticleContentWrapper = styled.section`
 	font-size: 16px;
-	color: #ff85f5;
+	color: #ffa1f7;
 `;

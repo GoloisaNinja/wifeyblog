@@ -19,7 +19,7 @@ export function ArticleCard({ title, hookText, author, image, createdAt, id }) {
 				</div>
 			</div>
 			<Title>
-				<GradientP font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
+				<GradientP font={"'Poppins', sans-serif"} color={'#ffffff, #ffadfc'}>
 					{title}
 				</GradientP>
 			</Title>
@@ -29,17 +29,17 @@ export function ArticleCard({ title, hookText, author, image, createdAt, id }) {
 				</GradientP>
 			</Author>
 			<Preview>
-				<GradientP font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
+				<GradientP font={"'Poppins', sans-serif"} color={'#ffffff, #ff63fa'}>
 					{hookText}
 				</GradientP>
 				<Link to={`/articles/${id}`}>
-					<GradientP font={"'Patua One', cursive"} color={'#ff0a78, #5773ff'}>
+					<GradientP font={"'Poppins', sans-serif"} color={'#ffffff, #5773ff'}>
 						CONTINUE READING
 					</GradientP>
 				</Link>
 			</Preview>
 			<CreatedAt>
-				<GradientP font={"'Patua One', cursive"} color={'#ff0a78, #5773ff'}>
+				<GradientP font={"'Poppins', sans-serif"} color={'#ffffff, #5773ff'}>
 					published {createdAt.slice(0, 10)}
 				</GradientP>
 			</CreatedAt>
