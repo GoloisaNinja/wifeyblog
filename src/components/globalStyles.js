@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 16px;
   }
   body{
-    //font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.2;
     background: rgba(51, 51, 51, 1);
     color: #eee;
