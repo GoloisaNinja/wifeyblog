@@ -6,9 +6,9 @@ export const wrapRootElement = ({ element }) => (
 	<ArticleContextProvider>{element}</ArticleContextProvider>
 );
 
-export const wrapPageElement = ({ element }) => {
+export const wrapPageElement = ({ element }) => (
 	<>
 		<GlobalStyle />
 		{element}
-	</>;
-};
+	</>
+);
