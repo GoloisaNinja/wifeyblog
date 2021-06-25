@@ -23,7 +23,7 @@ export const query = graphql`
 export default function ArticleTemplate({ data }) {
 	return (
 		<ArticleLayout>
-			<Button mt={'0px'} onClick={() => navigate(-1)}>
+			<Button mt={'0px'} onClick={() => navigate('/')}>
 				Back to home
 			</Button>
 			<ArticleHeader>

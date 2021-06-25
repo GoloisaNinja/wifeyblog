@@ -1,5 +1,3 @@
-export * from './Logo';
-export * from './Header';
 export * from './Layout';
 export * from './LandingHeroText';
 export * from './HeroImage';
@@ -8,3 +6,5 @@ export * from './ArticleCard';
 export * from './ArticleLayout';
 export * from './Button';
 export * from './GradientText';
+export * from './Logo';
+export * from './Header';

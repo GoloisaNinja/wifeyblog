@@ -6,9 +6,6 @@ export const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
   }
-  html {
-    background: #333333;
-  }
   select{
     height: 40px;
     font-size: 16px;
@@ -16,11 +13,8 @@ export const GlobalStyle = createGlobalStyle`
   body{
     font-family: 'Inter', sans-serif;
     line-height: 1.2;
-    background: #333333;
+    background: rgba(51, 51, 51, 1);
     color: #eee;
-  }
-  img {
-    width: 100%;
   }
   strong{
     font-weight: bold;
