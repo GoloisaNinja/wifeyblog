@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
-import { GradientText } from '../GradientText';
+import { GradientP } from '../GradientText';
 import {
 	ArticleCardWrapper,
 	Title,
@@ -18,30 +18,31 @@ export function ArticleCard({ title, hookText, author, image, createdAt, id }) {
 					<GatsbyImage image={image} alt='article image' />
 				</div>
 			</div>
-			<GradientText font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
-				<Title>{title}</Title>
-			</GradientText>
-			<GradientText font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
-				<Author>by {author}</Author>
-			</GradientText>
+			<Title>
+				<GradientP font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
+					{title}
+				</GradientP>
+			</Title>
+			<Author>
+				<GradientP font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
+					by {author}
+				</GradientP>
+			</Author>
 			<Preview>
-				<GradientText font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
+				<GradientP font={"'Patua One', cursive"} color={'#e895e5, #1bc4f2'}>
 					{hookText}
-				</GradientText>
-
+				</GradientP>
 				<Link to={`/articles/${id}`}>
-					<GradientText
-						font={"'Patua One', cursive"}
-						color={'#ff0a78, #5773ff'}>
-						<p>CONTINUE READING</p>
-					</GradientText>
+					<GradientP font={"'Patua One', cursive"} color={'#ff0a78, #5773ff'}>
+						CONTINUE READING
+					</GradientP>
 				</Link>
 			</Preview>
-			<GradientText font={"'Patua One', cursive"} color={'#ff0a78, #5773ff'}>
-				<CreatedAt>
-					<p>published {createdAt.slice(0, 10)}</p>
-				</CreatedAt>
-			</GradientText>
+			<CreatedAt>
+				<GradientP font={"'Patua One', cursive"} color={'#ff0a78, #5773ff'}>
+					published {createdAt.slice(0, 10)}
+				</GradientP>
+			</CreatedAt>
 		</ArticleCardWrapper>
 	);
 }

@@ -3,7 +3,7 @@ import { graphql, navigate } from 'gatsby';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import { ArticleLayout } from '../../components/ArticleLayout';
 import { Button } from '../../components/Button';
-import { GradientText } from 'components';
+import { GradientH1, GradientH5, GradientH4 } from 'components';
 import {
 	ArticleHeader,
 	ArticleByLine,
@@ -32,28 +32,28 @@ export default function ArticleTemplate({ data }) {
 						image={
 							data.strapiArticle.image.localFile.childImageSharp.gatsbyImageData
 						}
+						alt='article title image'
 					/>
 				</ArticleImageWrapper>
-
-				<GradientText
+				<GradientH1
 					font={"'Alfa Slab One', cursive"}
 					color={'#ff0a78, #5773ff'}>
-					<h1>{data.strapiArticle.title}</h1>
-				</GradientText>
+					{data.strapiArticle.title}
+				</GradientH1>
 				<ArticleByLine>
-					<GradientText
+					<GradientH5
 						font={"'Alfa Slab One', cursive"}
 						color={'#ff0a78, #5773ff'}>
-						<h5>written by {data.strapiArticle.author.username}</h5>
-					</GradientText>
+						written by {data.strapiArticle.author.username}
+					</GradientH5>
 				</ArticleByLine>
 			</ArticleHeader>
 			<ArticleHookTextWrapper>
-				<GradientText
+				<GradientH4
 					font={"'Alfa Slab One', cursive"}
 					color={'#5773ff, #ff0a78'}>
-					<h4>{data.strapiArticle.hookText}</h4>
-				</GradientText>
+					{data.strapiArticle.hookText}
+				</GradientH4>
 			</ArticleHookTextWrapper>
 			<ArticleContentWrapper>
 				{data.strapiArticle.content}

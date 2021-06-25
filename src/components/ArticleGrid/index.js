@@ -2,17 +2,15 @@ import React, { useContext } from 'react';
 import ArticleContext from '../../context/ArticleContext';
 import { ArticleGridWrapper, SectionWrapper } from './styles';
 import { ArticleCard } from '../ArticleCard';
-import { GradientText } from '../GradientText';
+import { GradientH1 } from '../GradientText';
 
 export function ArticleGrid() {
 	const { articles } = useContext(ArticleContext);
 	return (
 		<SectionWrapper>
-			<GradientText
-				font={"'Alfa Slab One', cursive"}
-				color={'#5773ff, #ff0a78'}>
-				<h1>Featured Articles</h1>
-			</GradientText>
+			<GradientH1 font={"'Alfa Slab One', cursive"} color={'#5773ff, #ff0a78'}>
+				Featured Articles
+			</GradientH1>
 			<ArticleGridWrapper>
 				{articles.map((article) => (
 					<ArticleCard

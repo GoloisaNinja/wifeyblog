@@ -13,11 +13,11 @@ export const Button = styled.button`
 	box-shadow: 0 0 10px 5px #ff00f7;
 	margin-top: ${(props) => props.mt};
 	@media (min-width: 600px) {
-		width: ${(props) => props.frontpage && '50%'};
+		width: ${(props) => props.location === 'frontpage' && '50%'};
 	}
 	@media (min-width: 940px) {
 		margin-top: 0;
-		width: ${(props) => props.frontpage && '100%'};
+		width: ${(props) => props.location === 'frontpage' && '100%'};
 	}
 	&:hover {
 		background: #5773ff;

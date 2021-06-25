@@ -42,7 +42,7 @@ export const Preview = styled.div`
 		text-align: center;
 		text-decoration: none;
 
-		> div:last-child {
+		> p:last-child {
 			margin-top: 20px;
 		}
 	}
