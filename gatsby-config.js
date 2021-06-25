@@ -33,6 +33,8 @@ module.exports = {
 				icon: 'src/images/icon.png', // This path is realtive to the root of the site.
 			},
 		},
+		`gatsby-plugin-gatsby-cloud`,
+		`gatsby-plugin-offline`,
 		{
 			resolve: 'gatsby-source-strapi',
 			options: {
