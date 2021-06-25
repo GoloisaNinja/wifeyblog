@@ -7,4 +7,5 @@ export const ArticleLayoutWrapper = styled.div`
 	align-items: center;
 	max-width: 1000px;
 	padding: 25px;
+	margin: 0 auto;
 `;
