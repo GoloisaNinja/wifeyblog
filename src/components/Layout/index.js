@@ -2,6 +2,7 @@ import React from 'react';
 import { MainLayoutWrapper } from './styles';
 import { Header } from '../Header';
 import { LandingHeroText } from '../LandingHeroText';
+import { Footer } from '../Footer';
 
 const Layout = ({ children }) => {
 	return (
@@ -11,7 +12,7 @@ const Layout = ({ children }) => {
 				<LandingHeroText />
 				<main>{children}</main>
 			</MainLayoutWrapper>
-			{/* Footer element to be made in the future */}
+			<Footer />
 		</>
 	);
 };

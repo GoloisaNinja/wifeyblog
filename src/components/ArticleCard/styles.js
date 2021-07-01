@@ -5,7 +5,7 @@ export const ArticleCardWrapper = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(85deg, #40084d, #2e0038);
+	background: linear-gradient(45deg, #2e2e2e, #473a4a);
 	box-shadow: 0 0 10px 5px #ff00f7, 0 0 10px 10px #5773ff;
 	> div:first-child {
 		overflow: hidden;
